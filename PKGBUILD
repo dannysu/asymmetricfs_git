@@ -11,11 +11,9 @@ depends=('fuse' 'boost-libs')
 makedepends=('git' 'cmake' 'boost')
 optdepends=()
 source=('git+https://github.com/ckennelly/asymmetricfs.git'
-        'git+http://git.chromium.org/external/googletest.git'
-        'larger_file.patch')
+        'git+http://git.chromium.org/external/googletest.git')
 sha1sums=('SKIP'
-          'SKIP'
-          'ff46ffff2a5829e85aecba46bb69ff1466b5c3a9')
+          'SKIP')
 
 _gitname=asymmetricfs
 
@@ -33,7 +31,6 @@ prepare() {
 
 build() {
   cd "$srcdir/$_gitname"
-  patch -p1 -i "$srcdir/larger_file.patch"
   cmake .
   make
 }
