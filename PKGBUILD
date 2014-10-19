@@ -1,8 +1,8 @@
 # Maintainer: Danny Su <contact@dannysu.com>
 
 pkgname=asymmetricfs-git
-pkgver=r116.382e958
-pkgrel=2
+pkgver=r123.88179d3
+pkgrel=1
 pkgdesc='An Asymmetric, Encrypting Filesystem for Userspace'
 arch=('i686' 'x86_64')
 url="https://github.com/ckennelly/asymmetricfs"
